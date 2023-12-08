@@ -6,7 +6,7 @@
 /*   By: bamssaye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 11:58:09 by ajordan-          #+#    #+#             */
-/*   Updated: 2023/12/07 04:29:23 by bamssaye         ###   ########.fr       */
+/*   Updated: 2023/12/08 16:56:40 by bamssaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int	ft_printf(const char *str, ...)
 		if (str[i] == '%')
 		{
 			count += ft_format(ap, str[i + 1]);
+			i++;
 		}
 		else
 			count += ft_putchar(str[i]);

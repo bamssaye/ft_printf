@@ -12,24 +12,23 @@
 
 #include "ft_printf.h"
 
-void ft_puthexa(unsigned int n, int *count, char type)
+void	ft_puthexa(unsigned int n, int *count, char type)
 {
-    char    *hexl;
-    char    *hexu;
-    char    *hexa;
+	char	*hexl;
+	char	*hexu;
+	char	*hexa;
 
-    hexu = "0123456789ABCDEF";
-    hexl = "0123456789abcdef";
-    if(type == 'x')
-        hexa = hexl;
-    else if(type == 'X')
-        hexa = hexu;
-    if (n >= 16)
-    {
-        ft_puthexa((n / 16), count, type);
-        ft_puthexa((n % 16), count, type);
-    }
-    else
-        *count += ft_putchar (hexa[n]);
+	hexu = "0123456789ABCDEF";
+	hexl = "0123456789abcdef";
+	if (type == 'x')
+		hexa = hexl;
+	else if (type == 'X')
+		hexa = hexu;
+	if (n >= 16)
+	{
+		ft_puthexa((n / 16), count, type);
+		ft_puthexa((n % 16), count, type);
+	}
+	else
+		*count += ft_putchar(hexa[n]);
 }
-

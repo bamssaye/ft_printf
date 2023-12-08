@@ -12,26 +12,26 @@
 
 #include "ft_printf.h"
 
-int ft_format(va_list ap, char index)
+int	ft_format(va_list ap, char index)
 {
-    char *type;
-    int count;
-    
-    count = 0;
-    type = "cspdiuxX%";
-    if(type[0] == index)
-        count += ft_putchar(va_arg(ap, int));
-    else if (type[1] == index)
-        count += ft_putstr(va_arg(ap, char*));
-    else if (type[5] == index)
-        ft_putnbr_uns(va_arg(ap, int), &count);
-    else if ((type[6] == index) || (type[7] == index))
-        ft_puthexa(va_arg(ap, unsigned int), &count, index);
-    else if (type[2] == index)
-        ft_pointer(va_arg(ap, unsigned long long int), &count);
+	char	*type;
+	int		count;
+
+	count = 0;
+	type = "cspdiuxX%";
+	if (type[0] == index)
+		count += ft_putchar(va_arg(ap, int));
+	else if (type[1] == index)
+		count += ft_putstr(va_arg(ap, char *));
+	else if (type[5] == index)
+		ft_putnbr_uns(va_arg(ap, int), &count);
+	else if ((type[6] == index) || (type[7] == index))
+		ft_puthexa(va_arg(ap, unsigned int), &count, index);
+	else if (type[2] == index)
+		ft_pointer(va_arg(ap, unsigned long long int), &count);
 	else if ((type[4] == index) || (type[3] == index))
-        ft_putnbr (va_arg(ap, int), &count);
-    else if (type[8] == index)
-        count += ft_putchar('%');
-    return (count);
+		ft_putnbr(va_arg(ap, int), &count);
+	else if (type[8] == index)
+		count += ft_putchar('%');
+	return (count);
 }

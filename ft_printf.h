@@ -24,7 +24,7 @@ int ft_putchar(int c);
 void ft_putnbr(int n, int *count);
 void ft_putnbr_uns(unsigned int n, int *count);
 void ft_puthexa(unsigned int n, int *count, char type);
-int ft_pointer(unsigned long long int n);
+void ft_pointer(unsigned long long int n, int *count);
 int ft_putstr(char *str);
 int ft_format(va_list ap, char index);
 int ft_printf(const char *str, ...);

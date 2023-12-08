@@ -26,7 +26,6 @@ int	ft_printf(const char *str, ...)
 		if (str[i] == '%')
 		{
 			count += ft_format(ap, str[i + 1]);
-			i++;
 		}
 		else
 			count += ft_putchar(str[i]);

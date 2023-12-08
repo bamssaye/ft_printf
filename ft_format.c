@@ -28,11 +28,8 @@ int ft_format(va_list ap, char index)
     else if ((type[6] == index) || (type[7] == index))
         ft_puthexa(va_arg(ap, unsigned int), &count, index);
     else if (type[2] == index)
-    {
-		count += ft_putstr("0x");
-        count += ft_pointer(va_arg(ap, unsigned long long int));
-    }
-	else if ((type[3] == index) || (type[4] = index))
+        ft_pointer(va_arg(ap, unsigned long long int), &count);
+	else if ((type[4] == index) || (type[3] == index))
         ft_putnbr (va_arg(ap, int), &count);
     else if (type[8] == index)
         count += ft_putchar('%');

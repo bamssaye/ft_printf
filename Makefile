@@ -6,7 +6,7 @@
 #    By: bamssaye <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/06 17:29:34 by bamssaye          #+#    #+#              #
-#    Updated: 2023/12/07 01:50:44 by bamssaye         ###   ########.fr        #
+#    Updated: 2024/01/22 05:47:45 by bamssaye         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,4 +38,5 @@ fclean: clean
 	@echo Fclean is done
 re: fclean all
 
+.SECONDARY : $(OBG)
 .PHONY : all clean fclean re

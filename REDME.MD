@@ -36,20 +36,20 @@ The ft_printf function supports the following conversion specifiers:
 
 * %c: Prints a single character.
 * %s: Prints a string.
-%p: Prints a void pointer in hexadecimal format.
-%d and %i: Prints a decimal (base 10) number.
-%u: Prints an unsigned decimal (base 10) number.
-%x: Prints a number in hexadecimal (base 16) lowercase format.
-%X: Prints a number in hexadecimal (base 16) uppercase format.
-%%: Prints a percent sign.
+* %p: Prints a void pointer in hexadecimal format.
+* %d and %i: Prints a decimal (base 10) number.
+* %u: Prints an unsigned decimal (base 10) number.
+* %x: Prints a number in hexadecimal (base 16) lowercase format.
+* %X: Prints a number in hexadecimal (base 16) uppercase format.
+* %%: Prints a percent sign.
 
-Makefile Commands
+## Makefile Commands
 
-make NAME: Displays the program name.
-make all: Compiles the library and creates libftprintf.a.
-make clean: Removes object files.
-make fclean: Removes object files and the library.
-make re: Rebuilds the library.
+* make NAME: Displays the program name.
+* make all: Compiles the library and creates libftprintf.a.
+* make clean: Removes object files.
+* make fclean: Removes object files and the library.
+* make re: Rebuilds the library.
 
 ## Author
 ID : Bamssaye

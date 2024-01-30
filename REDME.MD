@@ -34,8 +34,8 @@ int main() {
 
 The ft_printf function supports the following conversion specifiers:
 
-%c: Prints a single character.
-%s: Prints a string.
+* %c: Prints a single character.
+* %s: Prints a string.
 %p: Prints a void pointer in hexadecimal format.
 %d and %i: Prints a decimal (base 10) number.
 %u: Prints an unsigned decimal (base 10) number.

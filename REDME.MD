@@ -29,7 +29,7 @@ int main() {
     ft_printf("Hello, %s! The answer is %d.\n", "world", 42);
     return 0;
 }
-
+```
 ## Supported Conversions
 
 The ft_printf function supports the following conversion specifiers:
